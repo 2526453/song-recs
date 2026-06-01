@@ -1,108 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="styles.css">
-    <title>Song Recs</title>
-    </head>
-    
-    <body>
-      <div id="page">
-        <div id="title-bar">
-          <span>Song Recs</span>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Song Recs</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header id="title-bar">
+    <h1>Song Recs</h1>
+  </header>
+
+  <div class="container">
+    <nav class="sidebar">
+      <button class="genre-btn" onclick="showGenre('alt-rock')"><span class="text">Alt Rock</span></button>
+      <button class="genre-btn" onclick="showGenre('classical')"><span class="text">Classical</span></button>
+      <button class="genre-btn" onclick="showGenre('edm')"><span class="text">EDM</span></button>
+      <button class="genre-btn" onclick="showGenre('goth-rock')"><span class="text">Goth Rock</span></button>
+      <button class="genre-btn" onclick="showGenre('j-pop')"><span class="text">J-Pop</span></button>
+      <button class="genre-btn" onclick="showGenre('j-rock')"><span class="text">J-Rock</span></button>
+      <button class="genre-btn" onclick="showGenre('metal')"><span class="text">Metal</span></button>
+      <button class="genre-btn" onclick="showGenre('nu-metal')"><span class="text">Nu Metal</span></button>
+      <button class="genre-btn" onclick="showGenre('punk-rock')"><span class="text">Punk Rock</span></button>
+      <button class="genre-btn" onclick="showGenre('rap')"><span class="text">Rap</span></button>
+      <button class="genre-btn" onclick="showGenre('rnb')"><span class="text">Rhythm & Blues</span></button>
+    </nav>
+
+    <main class="content-display">
+      <div id="welcome-message">
+        <h2>Select a genre from the left to view recommendations!</h2>
+      </div>
+
+      <div id="songs-container" class="songs-slider">
         </div>
-      </div>
+    </main>
+  </div>
 
-      <div class="option-bar"> Genre
-        <div class="option-item grow">Alt Rock</div>
-        <div class="option-item grow">Classical</div>
-        <div class="option-item grow">EDM</div>
-        <div class="option-item grow">Goth Rock</div>
-        <div class="option-item grow">J-Pop</div>
-        <div class="option-item grow">J-Rock</div>
-        <div class="option-item grow">Metal</div>
-        <div class="option-item grow">Nu Metal</div>
-        <div class="option-item grow">Punk Rock</div>
-        <div class="option-item grow">Rap</div>
-        <div class="option-item grow">Rhythm and Blues</div>
-      </div>
-
-      <div class="option-bar"> Genre
-        <div class="option-item grow">
-          <li>Alt Rock</li>	
-          <li>Classical</li>
-          <li>EDM</li>
-          <li>Goth Rock</li>
-          <li>J-Pop</li>
-          <li>J-Rock</li>
-          <li>Metal</li>
-          <li>Nu Metal</li>
-          <li>Punk Rock</li>
-          <li>Rap</li>
-          <li>Rhythm and Blues</li>	
-        </div>
-      </div>
-      
-
-      <main id="main-doc">
-        <section class="main-section" id="1">
-          <header>1</header>
-          <p><code></code></p>
-          <p>
-            <ol>
-              <li></li>
-              <li></li>
-            </ol>
-            </p>
-        </section>
-        <section class="main-section" id="2">
-          <header>2</header>
-          <p><code></code></p>
-          <p>
-            <ol>
-              <li></li>
-              <li></li>
-            </ol>
-          </p>
-        </section>
-        <section class="main-section" id="3">
-          <header>3</header>
-          <p><code></code></p>
-          <p>
-            <ol>
-              <li></li>
-              <li></li>
-            </ol>
-          </p>
-          </section>
-          <section class="main-section" id="4">
-            <header>4</header>
-            <p><code></code></p>
-            <p>
-              <ol>
-                <li></li>
-                <li></li>
-              </ol>
-              </p>
-          </section>
-          <section class="main-section" id="5">
-            <header>5</header>
-            <p><code></code></p>
-            <p>
-              <ol>
-                <li></li>
-                <li></li>
-              </ol>
-            </p>
-            </section>
-            <nav id="navbar">
-              <header>meow</header>
-              <a href="" class="nav-link" target="_blank">1</a>
-              <a href="" class="nav-link" target="_blank">2</a>
-              <a href="" class="nav-link" target="_blank">3</a>
-              <a href="" class="nav-link" target="_blank">4</a>
-              <a href="" class="nav-link" target="_blank">5</a>
-              </nav> 
-      </main>
-    </body>
+  <script src="script.js"></script>
+</body>
 </html>
